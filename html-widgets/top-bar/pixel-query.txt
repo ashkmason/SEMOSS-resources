@@ -1,0 +1,3 @@
+Param Name: FrameData
+
+Query: Frame( ) | Select ( Country_Region , Active , Recovered_Perc , Deaths) | Collect(1);

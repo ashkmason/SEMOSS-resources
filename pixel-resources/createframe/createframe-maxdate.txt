@@ -1,0 +1,7 @@
+Selecting the maximum date and max value associated with that date 
+Group by the rest
+Colect all
+
+CreateFrame ( frameType = [ GRID ] ) .as ( [ Frame1 ] ) ;
+Frame ( ) | Select ( country , MAX ( date ) , MAX ( people_fully_vaccinated ) , MAX ( total_vaccinations ) , vaccines ) | GroupBy ( country , vaccines ) | Import ( frame = [ Frame1 ] ) ;
+Frame ( Frame1 ) | QueryAll ( ) | Collect ( - 1 ) ;
